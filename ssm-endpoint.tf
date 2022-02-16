@@ -1,3 +1,7 @@
+# ---------------------------------------------------------------------------------------------------------------------
+# Security Groups and VPC Endpoints for SSM
+# ---------------------------------------------------------------------------------------------------------------------
+
 # SSM VPC A
 resource "aws_security_group" "protected_vpc_a_endpoint_sg" {
   name        = "protected_vpc_a/sg-ssm-ec2-endpoints"

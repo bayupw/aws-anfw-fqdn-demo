@@ -1,4 +1,6 @@
+# ---------------------------------------------------------------------------------------------------------------------
 # Firewall Policy
+# ---------------------------------------------------------------------------------------------------------------------
 resource "aws_networkfirewall_firewall_policy" "anfw_policy" {
   name = "anfw-policy"
 
@@ -13,7 +15,9 @@ resource "aws_networkfirewall_firewall_policy" "anfw_policy" {
   }
 }
 
-# Firewall Rule Group (Stateful)
+# ---------------------------------------------------------------------------------------------------------------------
+# Firewall (Stateful) Rule Group
+# ---------------------------------------------------------------------------------------------------------------------
 resource "aws_networkfirewall_rule_group" "allow_domains" {
   capacity = 100
   name     = "allow-domains"
